@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 
+import '../daily_orbs/daily_orbs_screen.dart';
 import '../providers/announcements_provider.dart';
 import '../providers/auth_provider.dart';
 import '../theme/app_theme.dart';
@@ -28,11 +29,11 @@ class CategoriesScreen extends StatelessWidget {
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Today',
-                style: textTheme.labelMedium?.copyWith(color: AppColors.muted)),
+            Text('CITU Roar',
+                style: textTheme.titleLarge?.copyWith(
+                    fontWeight: FontWeight.w800, color: AppColors.navy)),
             Text(DateFormat('MMMM d, y').format(DateTime.now()),
-                style: textTheme.titleMedium
-                    ?.copyWith(fontWeight: FontWeight.w700)),
+                style: textTheme.labelMedium?.copyWith(color: AppColors.muted)),
           ],
         ),
         actions: [
@@ -96,6 +97,44 @@ class CategoriesScreen extends StatelessWidget {
                 ),
               ),
             ),
+          const SizedBox(height: 12),
+          Material(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(20),
+            child: InkWell(
+              borderRadius: BorderRadius.circular(20),
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => const DailyOrbsScreen()),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(16),
+                child: Row(
+                  children: [
+                    const CircleAvatar(
+                      backgroundColor: AppColors.accent,
+                      child: Icon(Icons.blur_circular, color: AppColors.navy),
+                    ),
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('Daily Orbs',
+                              style: textTheme.titleMedium
+                                  ?.copyWith(fontWeight: FontWeight.w700)),
+                          Text('4 puzzles · collect 6 orbs to win',
+                              style: textTheme.bodySmall
+                                  ?.copyWith(color: AppColors.muted)),
+                        ],
+                      ),
+                    ),
+                    const Icon(Icons.chevron_right),
+                  ],
+                ),
+              ),
+            ),
+          ),
           const SizedBox(height: 24),
           Text('Categories',
               style:

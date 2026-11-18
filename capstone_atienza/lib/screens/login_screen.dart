@@ -53,13 +53,20 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               const SizedBox(height: 24),
               Text(
-                'School Announcements,\nAll in One Place',
-                style: textTheme.headlineMedium
-                    ?.copyWith(fontWeight: FontWeight.w700),
+                'CITU Roar',
+                style: textTheme.displaySmall?.copyWith(
+                  fontWeight: FontWeight.w800,
+                  color: AppColors.navy,
+                ),
               ),
-              const SizedBox(height: 8),
+              const SizedBox(height: 4),
               Text(
-                'Enter your student ID to see the latest news from school.',
+                'Cebu Institute of Technology - University',
+                style: textTheme.titleSmall?.copyWith(color: AppColors.muted),
+              ),
+              const SizedBox(height: 12),
+              Text(
+                'Hear it first. Enter your student ID to see the latest campus news.',
                 style: textTheme.bodyLarge?.copyWith(color: AppColors.muted),
               ),
               const SizedBox(height: 28),

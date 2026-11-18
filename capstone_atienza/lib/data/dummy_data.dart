@@ -96,4 +96,44 @@ final List<Announcement> dummyAnnouncements = [
     author: 'PE Department',
     date: DateTime(2026, 11, 9),
   ),
+  Announcement(
+    id: 'a9',
+    title: 'Enrollment for next term opens',
+    body:
+        'Online enrollment for the next term opens on December 15. '
+        'Settle your clearance at the Registrar before enrolling.',
+    categoryId: 'general',
+    author: 'Registrar\'s Office',
+    date: DateTime(2026, 11, 8),
+  ),
+  Announcement(
+    id: 'a10',
+    title: 'Christmas break schedule',
+    body:
+        'Classes end on December 18 and resume on January 4. '
+        'Offices will have limited hours during the break.',
+    categoryId: 'holidays',
+    author: 'Principal\'s Office',
+    date: DateTime(2026, 11, 7),
+  ),
+  Announcement(
+    id: 'a11',
+    title: 'Coding Club hackathon',
+    body:
+        'Join the one-day campus hackathon on December 5. Teams of up to '
+        'four students. Register with the Coding Club officers by December 1.',
+    categoryId: 'clubs',
+    author: 'Coding Club',
+    date: DateTime(2026, 11, 6),
+  ),
+  Announcement(
+    id: 'a12',
+    title: 'Midterm grade release',
+    body:
+        'Midterm grades are now available. Report any concerns to your '
+        'subject teacher within one week of release.',
+    categoryId: 'exams',
+    author: 'Registrar\'s Office',
+    date: DateTime(2026, 11, 5),
+  ),
 ];
