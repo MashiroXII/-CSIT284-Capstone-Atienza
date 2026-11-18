@@ -8,6 +8,7 @@ import 'screens/home_shell.dart';
 import 'screens/login_screen.dart';
 import 'theme/app_theme.dart';
 
+// Next step: call Firebase.initializeApp() here before runApp.
 void main() {
   runApp(const SchoolBoardApp());
 }
@@ -24,11 +25,11 @@ class SchoolBoardApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => FavoritesProvider()),
       ],
       child: MaterialApp(
-        title: 'School Board',
+        title: 'CITU Roar',
         debugShowCheckedModeBanner: false,
         theme: AppTheme.light,
         home: Consumer<AuthProvider>(
-          builder: (_, auth, _) =>
+          builder: (_, auth, __) =>
               auth.isLoggedIn ? const HomeShell() : const LoginScreen(),
         ),
       ),
