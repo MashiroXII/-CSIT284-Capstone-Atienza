@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "497921307408",
+    "project_id": "cit-roar",
+    "storage_bucket": "cit-roar.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497921307408:android:6f1653bbf024b1441c2b95",
+        "android_client_info": {
+          "package_name": "com.example.capstone_atienza"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsj27zfA091LerbEhicXnEUTYuc_DTBso"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
